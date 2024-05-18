@@ -21,11 +21,6 @@ public class ReqresPostTest extends ReqresAPIs {
     @Test
     public void ReqresPost() throws IOException {
 
-//        System.out.println(System.getProperty("env") + "ENV Value");
-//        String env = System.getProperty("env") == null ? "qa" : System.getProperty("env");
-//        Map<String, Object> data = JsonUtils.getJsonDataAsMap("apis/dev/qa/"+env+"/testApisData.json");
-//        String endpoint = data.get("createAPIEndpoint");
-
         Map<String, Object> payload = Payloads.getReqresPostPayloadFromMap("Altamash","Software Engineer");
         Response response =  createReqres(payload);
         Assert.assertEquals(response.statusCode(),201);

@@ -34,21 +34,6 @@ public class ExtentReportManager  {
         return reportName;
     }
 
-//    public static void logPassDetails(String log) {
-//        Setup.extentTest.get().pass(MarkupHelper.createLabel(log, ExtentColor.GREEN));
-//    }
-//
-//    public static void logFailureDetails(String log) {
-//        Setup.extentTest.get().fail(MarkupHelper.createLabel(log, ExtentColor.RED));
-//    }
-//    public static void logInfoDetails(String log) {
-//        Setup.extentTest.get().info(MarkupHelper.createLabel(log, ExtentColor.GREY));
-//    }
-//
-//    public static void logWarningDetails(String log) {
-//        Setup.extentTest.get().warning(MarkupHelper.createLabel(log, ExtentColor.PINK));
-//    }
-
     public static void logPassDetails(String log) {
         Setup.extentTest.get().pass(MarkupHelper.createLabel(log, ExtentColor.GREEN));
     }

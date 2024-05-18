@@ -41,13 +41,6 @@ public class RestUtils {
         printRequestLogInReport(requestSpecification);
         printResponseLogInReport(response);
         return response;
-//        return RestAssured.given().log().all()
-//                .baseUri(endPoint)
-//                .headers(headers)
-//                .contentType(ContentType.JSON)
-//                .body(requestPayload)
-//                .post().then().log().all().extract().response();
-
     }
 
     public static Response performPost(String endPoint, Map<String, Object> requestPayload, Map<String, String> headers) {
@@ -57,12 +50,5 @@ public class RestUtils {
         printRequestLogInReport(requestSpecification);
         printResponseLogInReport(response);
         return response;
-//        return RestAssured.given().log().all()
-//                .baseUri(endPoint)
-//                .headers(headers)
-//                .contentType(ContentType.JSON)
-//                .body(requestPayload)
-//                .post().then().log().all().extract().response();
-
     }
 }
