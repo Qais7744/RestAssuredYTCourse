@@ -1,0 +1,34 @@
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">-->
+<!--<suite name="All Test Suite">-->
+<!--    <listeners>-->
+<!--        <listener class-name="reporting.Setup"></listener>-->
+<!--    </listeners>-->
+<!--    <test verbose="2" preserve-order="true"-->
+<!--          name="/Users/altamashbagwan/IdeaProjects/RestAssuredCourse/src/test/java/reqresapis/ReqresPostTest.java">-->
+<!--        <classes>-->
+<!--            <class name="reqresapis.ReqresPostTest">-->
+<!--                <methods>-->
+<!--                    <include name="ReqresPost"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--</suite>-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="reporting.Setup"></listener>
+    </listeners>
+    <test name="Reqres API Tests">
+        <classes>
+            <class name="reqresapis.ReqresPostTest">
+                <methods>
+                    <include name="ReqresPost"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
